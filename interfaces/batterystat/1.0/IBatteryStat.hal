@@ -18,6 +18,11 @@ package vendor.sudoerz.batterystat@1.0;
 interface IBatteryStat {
     isBatteryChargeProtEnabled() generates (bool rc);
     setBatteryChargeProtEnabled(bool enable) generates (bool rc);
-    getBatteryRemainCpat() generates (float rc);
-	getBatteryCycleCount() generates (uint32_t rc);
+    getBatteryCycleCount() generates (uint32_t rc);
+    getBatteryChargeFul() generates (uint32_t rc);
+    getBatteryChargeDes() generates (uint32_t rc);
+    isBatteryChargeLimitEnabled() generates (bool rc);
+    setBatteryChargeLimitEnabled(bool enable) generates (bool rc);
+    setBatteryChargeLimitCurrent(uint32_t value) generates (bool rc);
+    getBatteryChargeLimitCurrent() generates (uint32_t rc);
 };
