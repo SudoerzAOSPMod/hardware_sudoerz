@@ -19,5 +19,7 @@ interface IDisplayUtil {
     getDisplayBrightness() generates (uint32_t rc);
     getMaxDisplayBrightness() generates (uint32_t rc);
     setDCDimming(bool enable) generates (bool rc);
+    getDCDimmingStat() generates (string rc);
+    getDCDimmingEnableVal() generates (string rc);
 	setFODHBM(bool enable) generates (bool rc);
 };
