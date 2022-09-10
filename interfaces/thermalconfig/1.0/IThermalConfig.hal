@@ -13,11 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package vendor.sudoerz.reversecharging@1.0;
+package vendor.sudoerz.thermalconfig@1.0;
 
-interface IReverseCharging {
-    isEnabled() generates (bool rc);
-    setEnabled(bool enable) generates (bool rc);
-    getMinBattery() generates (uint32_t rc);
-    setMinBattery(uint32_t minBattery) generates (uint32_t rc);
+interface IThermalConfig {
+    setThermalSconfig(string value) generates (string rc);
 };
