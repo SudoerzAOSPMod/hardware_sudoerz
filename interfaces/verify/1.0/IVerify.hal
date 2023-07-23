@@ -16,5 +16,5 @@
 package vendor.sudoerz.verify@1.0;
 
 interface IVerify {
-    getInfo(string number) generates (bool rc);
+    getInfo() generates (string rc);
 };

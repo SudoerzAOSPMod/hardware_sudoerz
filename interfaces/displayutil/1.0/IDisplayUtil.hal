@@ -21,7 +21,7 @@ interface IDisplayUtil {
     setDCDimming(bool enable) generates (bool rc);
     getDCDimmingStat() generates (string rc);
     getDCDimmingEnableVal() generates (string rc);
-	setFODHBM(bool enable) generates (bool rc);
+    setFODHBM(bool enable) generates (bool rc);
     setFODStatus(uint32_t value) generates (uint32_t rc);
     setHBMMode(uint32_t value) generates (bool rc);
 };
